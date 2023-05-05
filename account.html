@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>parasite</title>
+
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="libs/scrollbar/jquery.scrollbar.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+	<div class="mnu-wrapper">
+		<div class="c-container">
+			<div class="header-wrapper">
+				<div class="toggle-nav-wrap">
+					<div class="toggle-nav active"></div>
+				</div>
+				<div class="header-info">
+					<a href="#" class="header-logo"><img src="img/logo.png" alt=""></a>
+					<ul class="header-mnu">
+						<li class="header-mnu-item">
+							<a href="#">Shop</a>
+							<div class="header-mnu-drop">
+								<ul>
+									<li><a href="#">Посмотреть все</a></li>
+									<li><a href="#">Худи</a></li>
+									<li><a href="#">Свитшоты</a></li>
+									<li><a href="#">Футболки</a></li>
+									<li><a href="#">Штаны</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">New collection</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="header-panel">
+					<div class="header-search-wrap">
+						<form class="header-search-form">
+							<button class="header-search-form-btn">
+								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.5776 14.5419C15.5805 13.53 16.2 12.1373 16.2 10.6C16.2 7.50721 13.6928 5 10.6 5C7.50721 5 5 7.50721 5 10.6C5 13.6928 7.50721 16.2 10.6 16.2C12.1555 16.2 13.5628 15.5658 14.5776 14.5419ZM14.5776 14.5419L19 19" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+							<input class="header-search-form-input" type="search" placeholder="Поиск по сайту" required>
+							<div class="header-search-close"><img src="img/search-close.svg" alt=""></div>
+						</form>
+						<div class="header-search-btn">
+							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.5776 14.5419C15.5805 13.53 16.2 12.1373 16.2 10.6C16.2 7.50721 13.6928 5 10.6 5C7.50721 5 5 7.50721 5 10.6C5 13.6928 7.50721 16.2 10.6 16.2C12.1555 16.2 13.5628 15.5658 14.5776 14.5419ZM14.5776 14.5419L19 19" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+					</div>
+					<a href="#" class="header-user">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16 8C16 10.2091 14.2091 12 12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M14.6824 14H9.31765C8.83513 14 8.59387 14 8.37806 14.0461C7.63116 14.2056 6.9853 14.7661 6.62346 15.569C6.51891 15.8009 6.44262 16.0765 6.29003 16.6278C6.10668 17.2901 6.01501 17.6213 6.00261 17.8884C5.95888 18.8308 6.46818 19.6817 7.22441 19.9297C7.43875 20 7.72864 20 8.30844 20H15.6916C16.2714 20 16.5613 20 16.7756 19.9297C17.5318 19.6817 18.0411 18.8308 17.9974 17.8884C17.985 17.6213 17.8933 17.2901 17.71 16.6278C17.5574 16.0765 17.4811 15.8009 17.3765 15.569C17.0147 14.7661 16.3688 14.2056 15.6219 14.0461C15.4061 14 15.1649 14 14.6824 14Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<a href="#" class="header-wishlist">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.8456 6.42726L12 6.59097L12.1544 6.42726C14.132 4.33053 17.4026 4.57697 19.0807 6.94915C20.57 9.05459 20.2133 12.0335 18.275 13.6776L12 19L5.725 13.6776C3.78668 12.0335 3.42999 9.05459 4.91934 6.94915C6.59738 4.57698 9.86801 4.33053 11.8456 6.42726Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<a href="#" class="header-cart">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.5 4.5H5.05848C5.7542 4.5 6.10206 4.5 6.36395 4.68876C6.62584 4.87752 6.73584 5.20753 6.95585 5.86754L7.5 7.5" stroke="#000" stroke-linecap="round"/>
+							<path d="M17.5 17.5H8.05091C7.90471 17.5 7.83162 17.5 7.77616 17.4938C7.18857 17.428 6.78605 16.8695 6.90945 16.2913C6.92109 16.2367 6.94421 16.1674 6.99044 16.0287V16.0287C7.04177 15.8747 7.06743 15.7977 7.09579 15.7298C7.38607 15.0342 8.04277 14.5608 8.79448 14.5054C8.8679 14.5 8.94906 14.5 9.11137 14.5H14.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M14.1787 14.5H11.1376C9.85836 14.5 9.21875 14.5 8.71781 14.1697C8.21687 13.8394 7.96492 13.2515 7.461 12.0757L7.29218 11.6818C6.48269 9.79294 6.07794 8.84853 6.52255 8.17426C6.96715 7.5 7.99464 7.5 10.0496 7.5H15.3305C17.6295 7.5 18.779 7.5 19.2126 8.24711C19.6462 8.99422 19.0758 9.99229 17.9352 11.9884L17.6517 12.4846C17.0897 13.4679 16.8088 13.9596 16.3432 14.2298C15.8776 14.5 15.3113 14.5 14.1787 14.5Z" stroke="#000" stroke-linecap="round"/>
+							<circle cx="17" cy="20" r="1" fill="#000"/>
+							<circle cx="9" cy="20" r="1" fill="#000"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="mnu-wrap">
+			<form class="mnu-search">
+				<button class="mnu-search-btn">
+					<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14.5776 14.5419C15.5805 13.53 16.2 12.1373 16.2 10.6C16.2 7.50721 13.6928 5 10.6 5C7.50721 5 5 7.50721 5 10.6C5 13.6928 7.50721 16.2 10.6 16.2C12.1555 16.2 13.5628 15.5658 14.5776 14.5419ZM14.5776 14.5419L19 19" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+				<input class="mnu-search-input" type="search" placeholder="Поиск по сайту" required>
+			</form>
+			<ul class="mnu">
+				<li class="mnu-item">
+					<a href="#">Shop</a>
+					<div class="mnu-2">
+						<div class="mnu-title">Shop</div>
+						<ul>
+							<li class="mnu-item"><a href="#">Посмотреть все</a></li>
+							<li class="mnu-item"><a href="#">Худи</a></li>
+							<li class="mnu-item"><a href="#">Свитшоты</a></li>
+							<li class="mnu-item"><a href="#">Футболки</a></li>
+							<li class="mnu-item"><a href="#">Штаны</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mnu-item">
+					<a href="#">New collection</a>
+					<div class="mnu-2">
+						<div class="mnu-title">New collection</div>
+						<ul>
+							<li class="mnu-item"><a href="#">Посмотреть все</a></li>
+							<li class="mnu-item"><a href="#">Худи</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mnu-item">
+					<a href="#">About us</a>
+					<div class="mnu-2">
+						<div class="mnu-title">About us</div>
+						<ul>
+							<li class="mnu-item"><a href="#">Посмотреть все</a></li>
+							<li class="mnu-item"><a href="#">Худи</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mnu-item">
+					<a href="#">Contact us</a>
+					<div class="mnu-2">
+						<div class="mnu-title">Contact us</div>
+						<ul>
+							<li class="mnu-item"><a href="#">Посмотреть все</a></li>
+							<li class="mnu-item"><a href="#">Худи</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mnu-item">
+					<a href="#">Account</a>
+					<div class="mnu-2">
+						<div class="mnu-title">Account</div>
+						<ul>
+							<li class="mnu-item"><a href="#">Посмотреть все</a></li>
+							<li class="mnu-item"><a href="#">Худи</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mnu-item">
+					<a href="#">Wishlist</a>
+					<div class="mnu-2">
+						<div class="mnu-title">Wishlist</div>
+						<ul>
+							<li class="mnu-item"><a href="#">Посмотреть все</a></li>
+							<li class="mnu-item"><a href="#">Худи</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="header-top">
+			<div class="c-container-small">
+				<div class="header-top-wrapper">
+					<div class="header-time">Режим работы 9:00 - 22:00 (Ежедневно)</div>
+					<div class="header-top-text">parasite</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-container">
+			<div class="header-wrapper">
+				<div class="toggle-nav-wrap">
+					<div class="toggle-nav"></div>
+				</div>
+				<div class="header-info">
+					<a href="#" class="header-logo"><img src="img/logo.png" alt=""></a>
+					<ul class="header-mnu">
+						<li class="header-mnu-item">
+							<a href="#">Shop</a>
+							<div class="header-mnu-drop">
+								<ul>
+									<li><a href="#">Посмотреть все</a></li>
+									<li><a href="#">Худи</a></li>
+									<li><a href="#">Свитшоты</a></li>
+									<li><a href="#">Футболки</a></li>
+									<li><a href="#">Штаны</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">New collection</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="header-panel">
+					<div class="header-search-wrap">
+						<form class="header-search-form">
+							<button class="header-search-form-btn">
+								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.5776 14.5419C15.5805 13.53 16.2 12.1373 16.2 10.6C16.2 7.50721 13.6928 5 10.6 5C7.50721 5 5 7.50721 5 10.6C5 13.6928 7.50721 16.2 10.6 16.2C12.1555 16.2 13.5628 15.5658 14.5776 14.5419ZM14.5776 14.5419L19 19" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+							<input class="header-search-form-input" type="search" placeholder="Поиск по сайту" required>
+							<div class="header-search-close"><img src="img/search-close.svg" alt=""></div>
+						</form>
+						<div class="header-search-btn">
+							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.5776 14.5419C15.5805 13.53 16.2 12.1373 16.2 10.6C16.2 7.50721 13.6928 5 10.6 5C7.50721 5 5 7.50721 5 10.6C5 13.6928 7.50721 16.2 10.6 16.2C12.1555 16.2 13.5628 15.5658 14.5776 14.5419ZM14.5776 14.5419L19 19" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+					</div>
+					<a href="#" class="header-user">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16 8C16 10.2091 14.2091 12 12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M14.6824 14H9.31765C8.83513 14 8.59387 14 8.37806 14.0461C7.63116 14.2056 6.9853 14.7661 6.62346 15.569C6.51891 15.8009 6.44262 16.0765 6.29003 16.6278C6.10668 17.2901 6.01501 17.6213 6.00261 17.8884C5.95888 18.8308 6.46818 19.6817 7.22441 19.9297C7.43875 20 7.72864 20 8.30844 20H15.6916C16.2714 20 16.5613 20 16.7756 19.9297C17.5318 19.6817 18.0411 18.8308 17.9974 17.8884C17.985 17.6213 17.8933 17.2901 17.71 16.6278C17.5574 16.0765 17.4811 15.8009 17.3765 15.569C17.0147 14.7661 16.3688 14.2056 15.6219 14.0461C15.4061 14 15.1649 14 14.6824 14Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<a href="#" class="header-wishlist">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.8456 6.42726L12 6.59097L12.1544 6.42726C14.132 4.33053 17.4026 4.57697 19.0807 6.94915C20.57 9.05459 20.2133 12.0335 18.275 13.6776L12 19L5.725 13.6776C3.78668 12.0335 3.42999 9.05459 4.91934 6.94915C6.59738 4.57698 9.86801 4.33053 11.8456 6.42726Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<a href="#" class="header-cart">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.5 4.5H5.05848C5.7542 4.5 6.10206 4.5 6.36395 4.68876C6.62584 4.87752 6.73584 5.20753 6.95585 5.86754L7.5 7.5" stroke="#000" stroke-linecap="round"/>
+							<path d="M17.5 17.5H8.05091C7.90471 17.5 7.83162 17.5 7.77616 17.4938C7.18857 17.428 6.78605 16.8695 6.90945 16.2913C6.92109 16.2367 6.94421 16.1674 6.99044 16.0287V16.0287C7.04177 15.8747 7.06743 15.7977 7.09579 15.7298C7.38607 15.0342 8.04277 14.5608 8.79448 14.5054C8.8679 14.5 8.94906 14.5 9.11137 14.5H14.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M14.1787 14.5H11.1376C9.85836 14.5 9.21875 14.5 8.71781 14.1697C8.21687 13.8394 7.96492 13.2515 7.461 12.0757L7.29218 11.6818C6.48269 9.79294 6.07794 8.84853 6.52255 8.17426C6.96715 7.5 7.99464 7.5 10.0496 7.5H15.3305C17.6295 7.5 18.779 7.5 19.2126 8.24711C19.6462 8.99422 19.0758 9.99229 17.9352 11.9884L17.6517 12.4846C17.0897 13.4679 16.8088 13.9596 16.3432 14.2298C15.8776 14.5 15.3113 14.5 14.1787 14.5Z" stroke="#000" stroke-linecap="round"/>
+							<circle cx="17" cy="20" r="1" fill="#000"/>
+							<circle cx="9" cy="20" r="1" fill="#000"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="main-orders">
+			<div class="main-orders-title">Ваш заказ</div>
+			<div class="main-orders-items-wrap scrollbar-inner">
+				<div class="main-orders-items">
+					<div class="main-orders-item">
+						<div class="main-orders-item-info">
+							<div class="main-orders-item-img">
+								<img src="img/main-orders-img.png" alt="">
+							</div>
+							<div class="main-orders-item-text-wrap">
+								<div class="main-orders-item-text">Однотонные шорты</div>
+								<div class="main-orders-item-text">Черные</div>
+								<div class="main-orders-item-text">Размер: М</div>
+								<div class="main-orders-item-quantity-mob">
+									<div class="main-orders-item-text">Количество:</div>
+									<div class="main-orders-item-quantity">
+										<input class="main-orders-item-quantity-input" type="text" value="1">
+										<div class="main-orders-item-quantity-arrows">
+											<div class="main-orders-item-quantity-plus"><img src="img/quantity-arrow.svg" alt=""></div>
+											<div class="main-orders-item-quantity-minus"><img src="img/quantity-arrow.svg" alt=""></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-orders-item-right">
+							<div class="main-orders-item-quantity main-orders-item-quantity-desctop">
+								<input class="main-orders-item-quantity-input" type="text" value="1">
+								<div class="main-orders-item-quantity-arrows">
+									<div class="main-orders-item-quantity-plus"><img src="img/quantity-arrow.svg" alt=""></div>
+									<div class="main-orders-item-quantity-minus"><img src="img/quantity-arrow.svg" alt=""></div>
+								</div>
+							</div>
+							<div class="main-orders-item-cost">2490 руб.</div>
+						</div>
+					</div>
+					<div class="main-orders-item">
+						<div class="main-orders-item-info">
+							<div class="main-orders-item-img">
+								<img src="img/main-orders-img.png" alt="">
+							</div>
+							<div class="main-orders-item-text-wrap">
+								<div class="main-orders-item-text">Однотонные шорты</div>
+								<div class="main-orders-item-text">Черные</div>
+								<div class="main-orders-item-text">Размер: М</div>
+								<div class="main-orders-item-quantity-mob">
+									<div class="main-orders-item-text">Количество:</div>
+									<div class="main-orders-item-quantity">
+										<input class="main-orders-item-quantity-input" type="text" value="1">
+										<div class="main-orders-item-quantity-arrows">
+											<div class="main-orders-item-quantity-plus"><img src="img/quantity-arrow.svg" alt=""></div>
+											<div class="main-orders-item-quantity-minus"><img src="img/quantity-arrow.svg" alt=""></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-orders-item-right">
+							<div class="main-orders-item-quantity main-orders-item-quantity-desctop">
+								<input class="main-orders-item-quantity-input" type="text" value="1">
+								<div class="main-orders-item-quantity-arrows">
+									<div class="main-orders-item-quantity-plus"><img src="img/quantity-arrow.svg" alt=""></div>
+									<div class="main-orders-item-quantity-minus"><img src="img/quantity-arrow.svg" alt=""></div>
+								</div>
+							</div>
+							<div class="main-orders-item-cost">2490 руб.</div>
+						</div>
+					</div>
+					<div class="main-orders-item">
+						<div class="main-orders-item-info">
+							<div class="main-orders-item-img">
+								<img src="img/main-orders-img.png" alt="">
+							</div>
+							<div class="main-orders-item-text-wrap">
+								<div class="main-orders-item-text">Однотонные шорты</div>
+								<div class="main-orders-item-text">Черные</div>
+								<div class="main-orders-item-text">Размер: М</div>
+								<div class="main-orders-item-quantity-mob">
+									<div class="main-orders-item-text">Количество:</div>
+									<div class="main-orders-item-quantity">
+										<input class="main-orders-item-quantity-input" type="text" value="1">
+										<div class="main-orders-item-quantity-arrows">
+											<div class="main-orders-item-quantity-plus"><img src="img/quantity-arrow.svg" alt=""></div>
+											<div class="main-orders-item-quantity-minus"><img src="img/quantity-arrow.svg" alt=""></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-orders-item-right">
+							<div class="main-orders-item-quantity main-orders-item-quantity-desctop">
+								<input class="main-orders-item-quantity-input" type="text" value="1">
+								<div class="main-orders-item-quantity-arrows">
+									<div class="main-orders-item-quantity-plus"><img src="img/quantity-arrow.svg" alt=""></div>
+									<div class="main-orders-item-quantity-minus"><img src="img/quantity-arrow.svg" alt=""></div>
+								</div>
+							</div>
+							<div class="main-orders-item-cost">2490 руб.</div>
+						</div>
+					</div>
+					<div class="main-orders-item">
+						<div class="main-orders-item-info">
+							<div class="main-orders-item-img">
+								<img src="img/main-orders-img.png" alt="">
+							</div>
+							<div class="main-orders-item-text-wrap">
+								<div class="main-orders-item-text">Однотонные шорты</div>
+								<div class="main-orders-item-text">Черные</div>
+								<div class="main-orders-item-text">Размер: М</div>
+								<div class="main-orders-item-quantity-mob">
+									<div class="main-orders-item-text">Количество:</div>
+									<div class="main-orders-item-quantity">
+										<input class="main-orders-item-quantity-input" type="text" value="1">
+										<div class="main-orders-item-quantity-arrows">
+											<div class="main-orders-item-quantity-plus"><img src="img/quantity-arrow.svg" alt=""></div>
+											<div class="main-orders-item-quantity-minus"><img src="img/quantity-arrow.svg" alt=""></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-orders-item-right">
+							<div class="main-orders-item-quantity main-orders-item-quantity-desctop">
+								<input class="main-orders-item-quantity-input" type="text" value="1">
+								<div class="main-orders-item-quantity-arrows">
+									<div class="main-orders-item-quantity-plus"><img src="img/quantity-arrow.svg" alt=""></div>
+									<div class="main-orders-item-quantity-minus"><img src="img/quantity-arrow.svg" alt=""></div>
+								</div>
+							</div>
+							<div class="main-orders-item-cost">2490 руб.</div>
+						</div>
+					</div>
+					<div class="main-orders-item">
+						<div class="main-orders-item-info">
+							<div class="main-orders-item-img">
+								<img src="img/main-orders-img.png" alt="">
+							</div>
+							<div class="main-orders-item-text-wrap">
+								<div class="main-orders-item-text">Однотонные шорты</div>
+								<div class="main-orders-item-text">Черные</div>
+								<div class="main-orders-item-text">Размер: М</div>
+								<div class="main-orders-item-quantity-mob">
+									<div class="main-orders-item-text">Количество:</div>
+									<div class="main-orders-item-quantity">
+										<input class="main-orders-item-quantity-input" type="text" value="1">
+										<div class="main-orders-item-quantity-arrows">
+											<div class="main-orders-item-quantity-plus"><img src="img/quantity-arrow.svg" alt=""></div>
+											<div class="main-orders-item-quantity-minus"><img src="img/quantity-arrow.svg" alt=""></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-orders-item-right">
+							<div class="main-orders-item-quantity main-orders-item-quantity-desctop">
+								<input class="main-orders-item-quantity-input" type="text" value="1">
+								<div class="main-orders-item-quantity-arrows">
+									<div class="main-orders-item-quantity-plus"><img src="img/quantity-arrow.svg" alt=""></div>
+									<div class="main-orders-item-quantity-minus"><img src="img/quantity-arrow.svg" alt=""></div>
+								</div>
+							</div>
+							<div class="main-orders-item-cost">2490 руб.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-orders-bottom">
+				<div class="main-orders-amount">
+					<div class="main-orders-amount-title">Сумма заказа:</div>
+					<div class="main-orders-amount-value">2490 руб.</div>
+				</div>
+				<a href="#" class="main-orders-cart">Перейти в корзину</a>
+				<div class="main-orders-btns">
+					<a href="#" class="main-orders-continue">Продолжить покупки</a>
+					<a href="#" class="main-orders-btn">Оформить заказ</a>
+				</div>
+				<div class="main-orders-bottom-text">Стоимость доставки расчитывается при оформлении заказа</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="account">
+		<div class="c-container">
+			<div class="account-wrapper">
+				<div class="account-nav-wrap">
+					<div class="account-title">Мой аккаунт</div>
+					<div class="account-nav">
+						<div class="account-ava">Рд</div>
+						<div class="account-name">Привет, <span class="account-name-value">Райманов Дианир!</span></div>
+						<div class="account-tabs-nav">
+							<div class="account-tabs-nav-item active account-orders-open">Мои заказы</div>
+							<div class="account-tabs-nav-item account-data-open">Мои данные</div>
+							<div class="account-tabs-nav-item account-address-open">Мои адреса</div>
+							<div class="account-tabs-nav-item account-wishlist-open">Wishlist</div>
+							<div class="account-tabs-nav-item account-pass-open">Сменить пароль</div>
+						</div>
+						<a href="#" class="account-logout">Выйти</a>
+					</div>
+				</div>
+				<div class="account-right">
+					<div class="account-tabs-content account-orders active">
+						<div class="account-info-title account-orders-title">Мои заказы</div>
+						<div class="account-orders-items-wrap scrollbar-inner">
+							<div class="account-orders-items">
+								<div class="account-orders-item">
+									<div class="account-orders-item-top">
+										<div class="account-orders-item-photos">
+											<a href="#" class="account-orders-item-photos-item">
+												<img src="img/account-orders-img.png" alt="">
+											</a>
+											<a href="#" class="account-orders-item-photos-item">
+												<img src="img/account-orders-img.png" alt="">
+											</a>
+											<a href="#" class="account-orders-item-photos-item">
+												<img src="img/account-orders-img.png" alt="">
+											</a>
+										</div>
+										<div class="account-orders-item-info">
+											<div class="account-orders-item-info-item">Номер заказа: 1680905</div>
+											<div class="account-orders-item-info-item">Статус заказа: Оплачен</div>
+											<div class="account-orders-item-info-item">Трек номер: 657409873452</div>
+										</div>
+									</div>
+									<div class="account-orders-item-open">Открыть заказ</div>
+									<div class="account-orders-detail">
+										<div class="account-orders-detail-close"><img src="img/search-close.svg" alt=""></div>
+										<div class="account-orders-detail-number">Заказ: 909876</div>
+										<div class="account-orders-detail-status">Статус заказа: доставлен</div>
+										<div class="account-orders-detail-products">
+											<a href="#" class="account-orders-detail-product">
+												<div class="account-orders-detail-product-img">
+													<img src="img/products-img-1.png" alt="">
+												</div>
+												<div class="account-orders-detail-product-name">Однотонная футболка - белый</div>
+												<div class="account-orders-detail-product-cost">3490 руб.</div>
+												<div class="account-orders-detail-product-size">Размер: L</div>
+											</a>
+											<a href="#" class="account-orders-detail-product">
+												<div class="account-orders-detail-product-img">
+													<img src="img/products-img-1.png" alt="">
+												</div>
+												<div class="account-orders-detail-product-name">Однотонная футболка - белый</div>
+												<div class="account-orders-detail-product-cost">3490 руб.</div>
+												<div class="account-orders-detail-product-size">Размер: L</div>
+											</a>
+											<a href="#" class="account-orders-detail-product">
+												<div class="account-orders-detail-product-img">
+													<img src="img/products-img-1.png" alt="">
+												</div>
+												<div class="account-orders-detail-product-name">Однотонная футболка - белый</div>
+												<div class="account-orders-detail-product-cost">3490 руб.</div>
+												<div class="account-orders-detail-product-size">Размер: L</div>
+											</a>
+										</div>
+										<div class="account-orders-detail-info">
+											<div class="account-orders-detail-info-title">Адрес доставки:</div>
+											<div class="account-orders-detail-info-value">Россия, 143026, Московская обл, г. Одинцово, Можайское шоссе, 51, 140</div>
+										</div>
+										<div class="account-orders-detail-info">
+											<div class="account-orders-detail-info-title">Способ доставки:</div>
+											<div class="account-orders-detail-info-value">СДЭК - пункт выдачи (ул. Российская, 15)</div>
+										</div>
+										<div class="account-orders-detail-info">
+											<div class="account-orders-detail-info-title">Способ оплаты:</div>
+											<div class="account-orders-detail-info-value">Онлайн оплата</div>
+										</div>
+										<div class="account-orders-detail-info">
+											<div class="account-orders-detail-info-title">Трек-номер:</div>
+											<div class="account-orders-detail-info-value">89098347897</div>
+										</div>
+										<div class="account-orders-detail-delivery">Стоимость доставки: <span class="account-orders-detail-delivery-value">500 руб.</span></div>
+										<div class="account-orders-detail-amount">Сумма заказа: <span class="account-orders-detail-amount-value">23500 руб.</span></div>
+									</div>
+								</div>
+								<div class="account-orders-item">
+									<div class="account-orders-item-top">
+										<div class="account-orders-item-photos">
+											<a href="#" class="account-orders-item-photos-item">
+												<img src="img/account-orders-img.png" alt="">
+											</a>
+											<a href="#" class="account-orders-item-photos-item">
+												<img src="img/account-orders-img.png" alt="">
+											</a>
+											<a href="#" class="account-orders-item-photos-item">
+												<img src="img/account-orders-img.png" alt="">
+											</a>
+										</div>
+										<div class="account-orders-item-info">
+											<div class="account-orders-item-info-item">Номер заказа: 1680905</div>
+											<div class="account-orders-item-info-item">Статус заказа: Оплачен</div>
+											<div class="account-orders-item-info-item">Трек номер: 657409873452</div>
+										</div>
+									</div>
+									<div class="account-orders-item-open">Открыть заказ</div>
+									<div class="account-orders-detail">
+										<div class="account-orders-detail-close"><img src="img/search-close.svg" alt=""></div>
+										<div class="account-orders-detail-number">Заказ: 909876</div>
+										<div class="account-orders-detail-status">Статус заказа: доставлен</div>
+										<div class="account-orders-detail-products">
+											<a href="#" class="account-orders-detail-product">
+												<div class="account-orders-detail-product-img">
+													<img src="img/products-img-1.png" alt="">
+												</div>
+												<div class="account-orders-detail-product-name">Однотонная футболка - белый</div>
+												<div class="account-orders-detail-product-cost">3490 руб.</div>
+												<div class="account-orders-detail-product-size">Размер: L</div>
+											</a>
+											<a href="#" class="account-orders-detail-product">
+												<div class="account-orders-detail-product-img">
+													<img src="img/products-img-1.png" alt="">
+												</div>
+												<div class="account-orders-detail-product-name">Однотонная футболка - белый</div>
+												<div class="account-orders-detail-product-cost">3490 руб.</div>
+												<div class="account-orders-detail-product-size">Размер: L</div>
+											</a>
+											<a href="#" class="account-orders-detail-product">
+												<div class="account-orders-detail-product-img">
+													<img src="img/products-img-1.png" alt="">
+												</div>
+												<div class="account-orders-detail-product-name">Однотонная футболка - белый</div>
+												<div class="account-orders-detail-product-cost">3490 руб.</div>
+												<div class="account-orders-detail-product-size">Размер: L</div>
+											</a>
+										</div>
+										<div class="account-orders-detail-info">
+											<div class="account-orders-detail-info-title">Адрес доставки:</div>
+											<div class="account-orders-detail-info-value">Россия, 143026, Московская обл, г. Одинцово, Можайское шоссе, 51, 140</div>
+										</div>
+										<div class="account-orders-detail-info">
+											<div class="account-orders-detail-info-title">Способ доставки:</div>
+											<div class="account-orders-detail-info-value">СДЭК - пункт выдачи (ул. Российская, 15)</div>
+										</div>
+										<div class="account-orders-detail-info">
+											<div class="account-orders-detail-info-title">Способ оплаты:</div>
+											<div class="account-orders-detail-info-value">Онлайн оплата</div>
+										</div>
+										<div class="account-orders-detail-info">
+											<div class="account-orders-detail-info-title">Трек-номер:</div>
+											<div class="account-orders-detail-info-value">89098347897</div>
+										</div>
+										<div class="account-orders-detail-delivery">Стоимость доставки: <span class="account-orders-detail-delivery-value">500 руб.</span></div>
+										<div class="account-orders-detail-amount">Сумма заказа: <span class="account-orders-detail-amount-value">23500 руб.</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="account-tabs-content account-data">
+						<div class="account-info-title account-data-title">Мои данные</div>
+						<form class="account-data-form">
+							<label class="form-label">
+								<span class="form-label-title">Фамилия:</span>
+								<input class="form-input" type="text" name="surname">
+							</label>
+							<label class="form-label">
+								<span class="form-label-title">Имя:</span>
+								<input class="form-input" type="text" name="name">
+							</label>
+							<label class="form-label">
+								<span class="form-label-title">Отчество:</span>
+								<input class="form-input" type="text" name="patronymic">
+							</label>
+							<label class="form-label">
+								<span class="form-label-title">E-mail:</span>
+								<input class="form-input" type="email" name="email">
+							</label>
+							<label class="form-label">
+								<span class="form-label-title">Телефон:</span>
+								<input class="form-input" type="tel" name="phone">
+							</label>
+							<button class="account-data-form-btn form-btn" type="submit">Сохранить</button>
+						</form>
+					</div>
+					<div class="account-tabs-content account-address">
+						<div class="account-info-title account-address-title">Мои адреса</div>
+						<div class="account-address-items">
+							<div class="account-address-item">
+								<div class="account-address-item-value">Россия, Республика Башкортостан, Уфа, Рихарда Зорге, 64/2, 26, 450075</div>
+								<div class="account-address-item-btns">
+									<div class="account-address-item-edit account-address-item-btn">Редактировать</div>
+									<div class="account-address-item-delete account-address-item-btn">Удалить</div>
+								</div>
+							</div>
+							<div class="account-address-item">
+								<div class="account-address-item-value">Россия, Республика Башкортостан, Уфа, Рихарда Зорге, 64/2, 26, 450075</div>
+								<div class="account-address-item-btns">
+									<div class="account-address-item-edit account-address-item-btn">Редактировать</div>
+									<div class="account-address-item-delete account-address-item-btn">Удалить</div>
+								</div>
+							</div>
+						</div>
+						<div class="account-address-add">Добавить адрес</div>
+						<form class="account-address-add-form">
+							<label class="form-label">
+								<span class="form-label-title">Страна:</span>
+								<input class="form-input" type="text" name="country" required>
+							</label>
+							<label class="form-label">
+								<span class="form-label-title">Регион:</span>
+								<input class="form-input" type="text" name="region" required>
+							</label>
+							<label class="form-label">
+								<span class="form-label-title">Город:</span>
+								<input class="form-input" type="text" name="city" required>
+							</label>
+							<label class="form-label">
+								<span class="form-label-title">Улица:</span>
+								<input class="form-input" type="text" name="street" required>
+							</label>
+							<label class="form-label">
+								<span class="form-label-title">Дом:</span>
+								<input class="form-input" type="text" name="house" required>
+							</label>
+							<label class="form-label">
+								<span class="form-label-title">Квартира:</span>
+								<input class="form-input" type="text" name="appartment" required>
+							</label>
+							<label class="form-label">
+								<span class="form-label-title">Индекс:</span>
+								<input class="form-input" type="text" name="index" required>
+							</label>
+							<button class="account-address-add-form-btn form-btn" type="submit">Сохранить</button>
+						</form>
+					</div>
+					<div class="account-tabs-content account-wishlist">
+						<div class="account-info-title account-wishlist-title">Wishlist</div>
+						<div class="account-wishlist-items-wrap scrollbar-inner">
+							<div class="account-wishlist-items">
+								<div class="products-item">
+									<a href="#" class="products-item-img">
+										<img class="products-item-img-1" src="img/products-img-1.png" alt="">
+										<img class="products-item-img-2" src="img/products-img-2.png" alt="">
+									</a>
+									<div class="products-item-info">
+										<div class="products-item-name-wrap">
+											<div class="products-item-name">Однотонная футболка - белый</div>
+											<div class="products-item-cost">3 490 руб.</div>
+										</div>
+										<ul class="products-item-sizes">
+											<li><a href="#">Xs</a></li>
+											<li><a href="#">S</a></li>
+											<li><a href="#">M</a></li>
+											<li class="products-item-sizes-no"><a href="#">L</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xl</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xxl</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="products-item">
+									<a href="#" class="products-item-img">
+										<img class="products-item-img-1" src="img/products-img-1.png" alt="">
+										<img class="products-item-img-2" src="img/products-img-2.png" alt="">
+									</a>
+									<div class="products-item-info">
+										<div class="products-item-name-wrap">
+											<div class="products-item-name">Однотонная футболка - белый</div>
+											<div class="products-item-cost">3 490 руб.</div>
+										</div>
+										<ul class="products-item-sizes">
+											<li><a href="#">Xs</a></li>
+											<li><a href="#">S</a></li>
+											<li><a href="#">M</a></li>
+											<li class="products-item-sizes-no"><a href="#">L</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xl</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xxl</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="products-item">
+									<a href="#" class="products-item-img">
+										<img class="products-item-img-1" src="img/products-img-1.png" alt="">
+										<img class="products-item-img-2" src="img/products-img-2.png" alt="">
+									</a>
+									<div class="products-item-info">
+										<div class="products-item-name-wrap">
+											<div class="products-item-name">Однотонная футболка - белый</div>
+											<div class="products-item-cost">3 490 руб.</div>
+										</div>
+										<ul class="products-item-sizes">
+											<li><a href="#">Xs</a></li>
+											<li><a href="#">S</a></li>
+											<li><a href="#">M</a></li>
+											<li class="products-item-sizes-no"><a href="#">L</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xl</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xxl</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="products-item">
+									<a href="#" class="products-item-img">
+										<img class="products-item-img-1" src="img/products-img-1.png" alt="">
+										<img class="products-item-img-2" src="img/products-img-2.png" alt="">
+									</a>
+									<div class="products-item-info">
+										<div class="products-item-name-wrap">
+											<div class="products-item-name">Однотонная футболка - белый</div>
+											<div class="products-item-cost">3 490 руб.</div>
+										</div>
+										<ul class="products-item-sizes">
+											<li><a href="#">Xs</a></li>
+											<li><a href="#">S</a></li>
+											<li><a href="#">M</a></li>
+											<li class="products-item-sizes-no"><a href="#">L</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xl</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xxl</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="products-item">
+									<a href="#" class="products-item-img">
+										<img class="products-item-img-1" src="img/products-img-1.png" alt="">
+										<img class="products-item-img-2" src="img/products-img-2.png" alt="">
+									</a>
+									<div class="products-item-info">
+										<div class="products-item-name-wrap">
+											<div class="products-item-name">Однотонная футболка - белый</div>
+											<div class="products-item-cost">3 490 руб.</div>
+										</div>
+										<ul class="products-item-sizes">
+											<li><a href="#">Xs</a></li>
+											<li><a href="#">S</a></li>
+											<li><a href="#">M</a></li>
+											<li class="products-item-sizes-no"><a href="#">L</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xl</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xxl</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="products-item">
+									<a href="#" class="products-item-img">
+										<img class="products-item-img-1" src="img/products-img-1.png" alt="">
+										<img class="products-item-img-2" src="img/products-img-2.png" alt="">
+									</a>
+									<div class="products-item-info">
+										<div class="products-item-name-wrap">
+											<div class="products-item-name">Однотонная футболка - белый</div>
+											<div class="products-item-cost">3 490 руб.</div>
+										</div>
+										<ul class="products-item-sizes">
+											<li><a href="#">Xs</a></li>
+											<li><a href="#">S</a></li>
+											<li><a href="#">M</a></li>
+											<li class="products-item-sizes-no"><a href="#">L</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xl</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xxl</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="products-item">
+									<a href="#" class="products-item-img">
+										<img class="products-item-img-1" src="img/products-img-1.png" alt="">
+										<img class="products-item-img-2" src="img/products-img-2.png" alt="">
+									</a>
+									<div class="products-item-info">
+										<div class="products-item-name-wrap">
+											<div class="products-item-name">Однотонная футболка - белый</div>
+											<div class="products-item-cost">3 490 руб.</div>
+										</div>
+										<ul class="products-item-sizes">
+											<li><a href="#">Xs</a></li>
+											<li><a href="#">S</a></li>
+											<li><a href="#">M</a></li>
+											<li class="products-item-sizes-no"><a href="#">L</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xl</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xxl</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="products-item">
+									<a href="#" class="products-item-img">
+										<img class="products-item-img-1" src="img/products-img-1.png" alt="">
+										<img class="products-item-img-2" src="img/products-img-2.png" alt="">
+									</a>
+									<div class="products-item-info">
+										<div class="products-item-name-wrap">
+											<div class="products-item-name">Однотонная футболка - белый</div>
+											<div class="products-item-cost">3 490 руб.</div>
+										</div>
+										<ul class="products-item-sizes">
+											<li><a href="#">Xs</a></li>
+											<li><a href="#">S</a></li>
+											<li><a href="#">M</a></li>
+											<li class="products-item-sizes-no"><a href="#">L</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xl</a></li>
+											<li class="products-item-sizes-no"><a href="#">Xxl</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="account-tabs-content account-pass">
+						<div class="account-info-title account-pass-title">Сменить пароль</div>
+						<form class="account-pass-form">
+							<input class="form-input" type="password" name="pass" placeholder="Текущий пароль">
+							<input class="form-input" type="password" name="pass-new" placeholder="Новый пароль">
+							<input class="form-input" type="password" name="pass-new-repeat" placeholder="Повторить">
+							<button class="form-btn" type="submit">Сохранить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="c-container">
+			<div class="footer-wrapper">
+				<div class="footer-info">
+					<div class="footer-subtitle">Информация</div>
+					<ul class="footer-mnu">
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Обмен/возрат</a></li>
+						<li><a href="#">Таблица размеров</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-login">
+					<div class="footer-subtitle">Вход/регистрация</div>
+					<div class="footer-login-text">Войдите в личный кабинет<br> или <a href="#">зарегистрируйтесь</a></div>
+					<a href="#" class="footer-login-btn">Войти</a>
+				</div>
+				<div class="footer-social">
+					<div class="footer-subtitle">Социальные сети</div>
+					<ul class="social">
+						<li><a href="#"><img src="img/insta.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/vk.svg"></a></li>
+						<li><a href="#"><img src="img/yt.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/telega.svg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="footer-contacts">
+					<div class="footer-subtitle">Контакты</div>
+					<div class="footer-contacts-item">Телефон: <a href="tel:89999999999">8(999)-999-99-99</a></div>
+					<div class="footer-contacts-item">Tlgr/whatsapp: <a href="#">8(999)-999-99-99</a></div>
+					<div class="footer-contacts-item">E-mail: <a href="mailto:info@parasiteclo.ru">info@parasiteclo.ru</a></div>
+				</div>
+			</div>
+			<div class="footer-logo">
+				<img src="img/footer-logo.png" alt="">
+			</div>
+			<div class="footer-bottom">
+				<a href="#" class="footer-policy">Политика конфидициальности</a>
+				<div class="footer-copy">copyright &copy; 2022 parasite</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
