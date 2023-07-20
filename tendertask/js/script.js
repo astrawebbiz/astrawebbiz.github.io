@@ -3,7 +3,7 @@ let countItems = 150;
 let itemsOnPage = 10;
 
 let getCompaniesList = (page = 1, itemsCount = 10, countTotal = countItems) => {
-    $.getJSON('http://www.tender.pro/api/_info.companylist_by_set.json?_key=6dea68e23416b21d201571d4c9263a57&set_type_id=7&set_id=2&max_rows='+itemsCount+'&offset='+(itemsCount*page),
+    $.getJSON('https://www.tender.pro/api/_info.companylist_by_set.json?_key=6dea68e23416b21d201571d4c9263a57&set_type_id=7&set_id=2&max_rows='+itemsCount+'&offset='+(itemsCount*page),
         function(data) {
             let items = [];
             let statistic = `Cтраница ${page} из ${countTotal} по ${itemsCount} строк (всего строк: ${countTotal*itemsCount})`;
