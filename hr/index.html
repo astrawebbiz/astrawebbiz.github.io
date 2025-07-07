@@ -1,0 +1,418 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <link rel="stylesheet" href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav class="sidebar-wrapper">
+      <div class="sidebar-brand">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.svg" alt="Admin Dashboards"> HR
+        </a>
+      </div>
+      <div class="sidebar-menu">
+        <div
+          class="sidebarMenuScroll os-host os-theme-dark os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-transition os-host-scrollbar-vertical-hidden">
+          <div class="os-resize-observer-host observed">
+            <div class="os-resize-observer" style="left: 0px; right: auto;"></div>
+          </div>
+          <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
+            <div class="os-resize-observer"></div>
+          </div>
+          <div class="os-content-glue" style="margin: 0px; width: 209px; height: 812px;"></div>
+          <div class="os-padding">
+            <div class="os-viewport os-viewport-native-scrollbars-invisible" style="">
+              <div class="os-content" style="padding: 0px; height: 100%; width: 100%;">
+                <ul>
+                  <li>
+                    <a href="calendar.html">
+                      <i class="bi bi-house"></i>
+                      <span class="menu-text">Главная</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-columns-gap"></i>
+                      <span class="menu-text">Организация</span>
+                    </a>
+
+                  </li>
+                  <li class="sidebar-dropdown active">
+                    <a href="#">
+                      <i class="bi bi-calendar4"></i>
+                      <span class="menu-text">Время</span>
+                    </a>
+                    <div class="sidebar-submenu" style="display: block;">
+                      <ul>
+                        <li>
+                          <a href="tables.html">Моё время</a>
+                        </li>
+                        <li>
+                          <a href="data-tables.html">Сотрудники</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="sidebar-dropdown">
+                    <a href="#">
+                      <i class="bi bi-stickies"></i>
+                      <span class="menu-text">Документы</span>
+                    </a>
+                    <div class="sidebar-submenu" style="display: none;">
+                      <ul>
+                        <li>
+                          <a href="apex.html">Мои документы</a>
+                        </li>
+                        <li>
+                          <a href="morris.html">Кадровая политика</a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden">
+            <div class="os-scrollbar-track os-scrollbar-track-off">
+              <div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div>
+            </div>
+          </div>
+          <div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden os-scrollbar-unusable">
+            <div class="os-scrollbar-track os-scrollbar-track-off">
+              <div class="os-scrollbar-handle" style="height: 100%; transform: translate(0px, 0px);"></div>
+            </div>
+          </div>
+          <div class="os-scrollbar-corner"></div>
+        </div>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="page-header">
+        <div class="toggle-sidebar" id="toggle-sidebar"><i class="bi bi-list"></i></div>
+        <a href="index.html" class="d-lg-none d-md-block">
+          <img src="assets/images/logo.svg" class="logo-sm" alt="Bootstrap Gallery">
+        </a>
+        <ol class="breadcrumb d-lg-flex d-none">
+          <li class="breadcrumb-item">
+            <i class="bi bi-house"></i>
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumb-item breadcrumb-active" aria-current="page">Организация</li>
+        </ol>
+        <div class="header-actions-container">
+          <div class="search-container d-lg-block d-none">
+            <div class="input-group">
+              <input type="text" class="form-control" id="searchAny" placeholder="Введите запрос">
+              <button class="btn" type="button">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+          <a href="orders.html" class="leads d-none d-xl-flex">
+            <div class="lead-details">У вас <span class="count"> 21 </span> уведомление </div>
+            <span class="lead-icon"><i
+                class="bi bi-bell-fill animate__animated animate__swing animate__infinite infinite"></i><b
+                class="dot animate__animated animate__heartBeat animate__infinite"></b></span>
+          </a>
+          <ul class="header-actions">
+            <li class="dropdown">
+              <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+                <span class="user-name d-none d-md-block">Иванова Анна</span>
+                <span class="avatar">
+                  <img src="assets/images/user.png" alt="Admin Templates">
+
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userSettings">
+                <div class="header-profile-actions">
+                  <a href="profile.html">Профиль</a>
+                  <a href="account-settings.html">Настройки</a>
+                  <a href="login.html">Выход</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-wrapper-scroll">
+        <div class="content-wrapper">
+          <div class="card">
+            <div class="accordion" id="accordionExample2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOneLight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneLight" aria-expanded="false" aria-controls="collapseOneLight">Запросы:
+                    3</button>
+                </h2>
+                <div id="collapseOneLight" class="accordion-collapse collapse" aria-labelledby="headingOneLight"
+                  data-bs-parent="#accordionExample2" style="">
+                  <div class="accordion-body">
+                    <div class="table-responsive">
+                      <table class="table m-0" style="
+    vertical-align: middle;
+">
+
+                        <tbody>
+                          <tr>
+                            <td style="
+    width: 0;
+">
+                              <div class="customer shade-blue" style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 1rem;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 20px;
+">MK</div>
+                            </td>
+                            <td>Иванов Иван - запрос на отпуск с 05.06.2025 - 19.06.2025 (80 ч)</td>
+
+                            <td class="text-end"><span class="text-green"><i class="bi bi-check-circle-fill"></i></span>
+                            </td>
+                            <td class="text-end"><span class="text-red"><i class="bi bi-x-circle-fill"></i></span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="customer shade-blue" style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 1rem;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 20px;
+">MK</div>
+                            </td>
+                            <td>Иванов Иван - запрос на отпуск с 05.06.2025 - 19.06.2025 (80 ч)</td>
+
+                            <td class="text-end"><i class="bi bi-check-circle-fill" style="
+    color: #26ba4f;
+"></i></td>
+                            <td class="text-end"><i class="bi bi-x-circle-fill" style="
+    color: #f87957;
+"></i></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="customer shade-blue" style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 1rem;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 20px;
+">MK</div>
+                            </td>
+                            <td>Иванов Иван - запрос на отпуск с 05.06.2025 - 19.06.2025 (80 ч)</td>
+
+                            <td class="text-end"><i class="bi bi-check-circle-fill" style="
+    color: #26ba4f;
+"></i></td>
+                            <td class="text-end"><i class="bi bi-x-circle-fill" style="
+    color: #f87957;
+"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwoLight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoLight" aria-expanded="false" aria-controls="collapseTwoLight">Мои цели:
+                    3</button>
+                </h2>
+                <div id="collapseTwoLight" class="accordion-collapse collapse" aria-labelledby="headingTwoLight"
+                  data-bs-parent="#accordionExample2" style="">
+                  <div class="accordion-body">
+                    <div class="table-responsive">
+                      <table class="table m-0">
+                        <thead>
+                          <tr>
+                            <th>№</th>
+                            <th>Цель</th>
+                            <th>Срок</th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="
+    width: 0;
+">1</td>
+                            <td>Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель
+                              Цель</td>
+                            <td>05.08.2025</td>
+                            <td class="text-end"><i class="bi bi-check-circle-fill" style="
+    color: #26ba4f;
+"></i></td>
+                            <td class="text-end"><i class="bi bi-x-circle-fill" style="
+    color: #f87957;
+"></i></td>
+                          </tr>
+
+                          <tr>
+                            <td style="
+    width: 0;
+">2</td>
+                            <td>Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель
+                              Цель</td>
+                            <td>05.08.2025</td>
+                            <td class="text-end"><i class="bi bi-check-circle-fill" style="
+    color: #26ba4f;
+"></i></td>
+                            <td class="text-end"><i class="bi bi-x-circle-fill" style="
+    color: #f87957;
+"></i></td>
+                          </tr>
+                          <tr>
+                            <td style="
+    width: 0;
+">3</td>
+                            <td>Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель Цель
+                              Цель</td>
+                            <td>05.08.2025</td>
+                            <td class="text-end"><i class="bi bi-check-circle-fill" style="
+    color: #26ba4f;
+"></i></td>
+                            <td class="text-end"><i class="bi bi-x-circle-fill" style="
+    color: #f87957;
+"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">События HR</div>
+            </div>
+            <div class="card-body">
+              <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <i class="bi bi-bullseye alert-icon"></i>
+                8 марта 2025 года при пятидневной рабочей неделе будет выходным. 7 марта — будет рабочим, хоть и
+                сокращённым на 1 час. 8 марта 2025 года при пятидневной рабочей неделе будет выходным. 7 марта — будет
+                рабочим, хоть и сокращённым на 1 час.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                <i class="bi bi-chat-right-text alert-icon"></i>8 марта 2025 года при пятидневной рабочей неделе будет
+                выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час. 8 марта 2025 года при пятидневной
+                рабочей неделе будет выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час.<button
+                  type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle alert-icon"></i>8 марта 2025 года при пятидневной рабочей неделе будет
+                выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час. 8 марта 2025 года при пятидневной
+                рабочей неделе будет выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час.<button
+                  type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="bi bi-x-circle alert-icon"></i>8 марта 2025 года при пятидневной рабочей неделе будет
+                выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час. 8 марта 2025 года при пятидневной
+                рабочей неделе будет выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час.<button
+                  type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <i class="bi bi-exclamation-circle alert-icon"></i>8 марта 2025 года при пятидневной рабочей неделе
+                будет выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час. 8 марта 2025 года при пятидневной
+                рабочей неделе будет выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час.<button
+                  type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <i class="bi bi-info-circle alert-icon"></i>8 марта 2025 года при пятидневной рабочей неделе будет
+                выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час. 8 марта 2025 года при пятидневной
+                рабочей неделе будет выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час.<button
+                  type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert alert-light alert-dismissible fade show" role="alert">
+                <i class="bi bi-wallet2 alert-icon"></i>8 марта 2025 года при пятидневной рабочей неделе будет выходным.
+                7 марта — будет рабочим, хоть и сокращённым на 1 час. 8 марта 2025 года при пятидневной рабочей неделе
+                будет выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час.<button type="button"
+                  class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                <i class="bi bi-upc-scan alert-icon"></i>8 марта 2025 года при пятидневной рабочей неделе будет
+                выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час. 8 марта 2025 года при пятидневной
+                рабочей неделе будет выходным. 7 марта — будет рабочим, хоть и сокращённым на 1 час.<button
+                  type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Дни рождения</div>
+            </div>
+            <div class="card-body">
+              <ul class="user-messages">
+                <li>
+                  <div class="customer shade-blue">ТА</div>
+                  <div class="delivery-details">
+                    <span class="badge shade-blue">Тестирование</span>
+                    <h5>Турков Антон</h5>
+                    <p>30.06.2025</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="customer shade-blue">ГА</div>
+                  <div class="delivery-details">
+                    <span class="badge shade-blue">Разработка</span>
+                    <h5>Гринев Андрей</h5>
+                    <p>30.06.2025</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="customer shade-red">КН</div>
+                  <div class="delivery-details">
+                    <span class="badge shade-red">Маркетинг</span>
+                    <h5>Кузнецова Наталья</h5>
+                    <p>30.06.2025</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="app-footer">
+          <span>© TenderPro 2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/moment.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+  <script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
+</body>
+</html>
