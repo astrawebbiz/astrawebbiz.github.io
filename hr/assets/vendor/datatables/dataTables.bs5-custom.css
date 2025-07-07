@@ -1,5 +1,6 @@
 table.dataTable {
 	color: #8a8a8a;
+	vertical-align: middle;
 }
 table.dataTable td .media-box {
     display: flex;
