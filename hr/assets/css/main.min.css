@@ -4084,7 +4084,8 @@ textarea.form-control-lg {
 }
 
 .tab-content>.active {
-    display: block
+    display: block;
+    position: relative;
 }
 
 .navbar {
@@ -13595,13 +13596,13 @@ img {
 .sidebar-wrapper {
     width: 210px;
     padding: 0;
-    height: calc(100vh - 20px);
+    height: calc(100vh - 80px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     background: #fff;
     position: fixed;
-    top: 10px;
+    top: 65px;
     left: 20px;
     z-index: 999;
     -webkit-transition: left .3s ease,width .3s ease;
@@ -13634,8 +13635,7 @@ img {
 }
 
 .sidebar-menu {
-    padding: 20px 0;
-    height: calc(100vh - 100px)
+    padding: 0;
 }
 
 .sidebar-menu ul li a {
@@ -13771,7 +13771,7 @@ img {
     -webkit-transition: padding-left .3s ease;
     transition: padding-left .3s ease;
     padding: 0 0 0 230px;
-    height: calc(100vh - 20px)
+    height: calc(100vh - 75px);
 }
 
 @media screen and (max-width: 1024px) {
@@ -13805,12 +13805,16 @@ img {
 }
 
 .page-header {
-    padding: 10px 14px 20px 14px;
+    padding: 0px 14px 7px 14px;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #f8f8fb;
 }
 
 .page-header .toggle-sidebar {
@@ -14062,8 +14066,8 @@ img {
 }
 
 .header-actions>li .user-settings .avatar>img {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px
@@ -14084,7 +14088,7 @@ img {
     margin-right: 8px;
     vertical-align: middle;
     display: inline-block;
-    max-width: 100px;
+    max-width: 150px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis
@@ -14131,7 +14135,8 @@ img {
 .breadcrumb {
     background: rgba(0,0,0,0);
     padding: 0;
-    margin: 0
+    margin-left: 130px;
+    margin-bottom: 0;
 }
 
 .breadcrumb .breadcrumb-item {
@@ -14142,8 +14147,8 @@ img {
 }
 
 .breadcrumb .breadcrumb-item i {
-    font-size: 2rem;
-    margin-right: 15px;
+    font-size: 1rem;
+    margin-right: 4px;
     color: #3688fa
 }
 
@@ -14151,7 +14156,7 @@ img {
     color: #13181e;
     font-family: "bootstrap-icons" !important;
     content: "";
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     line-height: 1;
     vertical-align: middle
 }
@@ -18401,4 +18406,26 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 .btn-dotted i {
     margin: 0 !important;
     font-size: 14px;
+}
+
+.page-header .logo {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #3688fa;
+    gap: 8px;
+    margin-left: 18px;
+}
+
+.search_table_row .col-sm-12.col-md-6:nth-child(2) {
+    order: -1;
+}
+
+.btn-add-line {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }

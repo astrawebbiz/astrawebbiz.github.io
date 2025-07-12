@@ -9,12 +9,46 @@
 </head>
 <body>
   <div class="page-wrapper">
-    <nav class="sidebar-wrapper">
-      <div class="sidebar-brand">
-        <a href="index.html" class="logo">
-          <img src="assets/images/logo.svg" alt="Admin Dashboards"> HR
+    <div class="page-header">
+      <div class="toggle-sidebar" id="toggle-sidebar"><i class="bi bi-list"></i></div>
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.svg"> HR
+      </a>
+      <ol class="breadcrumb d-lg-flex d-none">
+        <li class="breadcrumb-item">
+          <i class="bi bi-house"></i>
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumb-item breadcrumb-active" aria-current="page">Организация</li>
+      </ol>
+      <div class="header-actions-container">
+        <a href="orders.html" class="leads d-none d-xl-flex">
+          <div class="lead-details">У вас <span class="count"> 21 </span> уведомление </div>
+          <span class="lead-icon"><i
+              class="bi bi-bell-fill animate__animated animate__swing animate__infinite infinite"></i><b
+              class="dot animate__animated animate__heartBeat animate__infinite"></b></span>
         </a>
+        <ul class="header-actions">
+          <li class="dropdown">
+            <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+              <span class="user-name d-none d-md-block">Иванова Анна</span>
+              <span class="avatar">
+                <img src="assets/images/user.png" alt="Admin Templates">
+
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userSettings">
+              <div class="header-profile-actions">
+                <a href="profile.html">Профиль</a>
+                <a href="account-settings.html">Настройки</a>
+                <a href="login.html">Выход</a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
+    </div>
+    <nav class="sidebar-wrapper">
       <div class="sidebar-menu">
         <div
           class="sidebarMenuScroll os-host os-theme-dark os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-transition os-host-scrollbar-vertical-hidden">
@@ -29,20 +63,20 @@
             <div class="os-viewport os-viewport-native-scrollbars-invisible" style="">
               <div class="os-content" style="padding: 0px; height: 100%; width: 100%;">
                 <ul>
-                  <li>
-                    <a href="calendar.html">
+                  <!--<li>
+                    <a href="https://astrawebbiz.github.io/hr/">
                       <i class="bi bi-house"></i>
                       <span class="menu-text">Главная</span>
                     </a>
-                  </li>
+                  </li>-->
                   <li>
-                    <a href="#">
+                    <a href="https://astrawebbiz.github.io/hr/organization.html">
                       <i class="bi bi-columns-gap"></i>
                       <span class="menu-text">Организация</span>
                     </a>
 
                   </li>
-                  <li class="sidebar-dropdown active">
+                  <!--<li class="sidebar-dropdown active">
                     <a href="#">
                       <i class="bi bi-calendar4"></i>
                       <span class="menu-text">Время</span>
@@ -74,7 +108,7 @@
 
                       </ul>
                     </div>
-                  </li>
+                  </li>-->
                 </ul>
               </div>
             </div>
@@ -94,53 +128,6 @@
       </div>
     </nav>
     <div class="main-container">
-      <div class="page-header">
-        <div class="toggle-sidebar" id="toggle-sidebar"><i class="bi bi-list"></i></div>
-        <a href="index.html" class="d-lg-none d-md-block">
-          <img src="assets/images/logo.svg" class="logo-sm" alt="Bootstrap Gallery">
-        </a>
-        <ol class="breadcrumb d-lg-flex d-none">
-          <li class="breadcrumb-item">
-            <i class="bi bi-house"></i>
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumb-item breadcrumb-active" aria-current="page">Организация</li>
-        </ol>
-        <div class="header-actions-container">
-          <div class="search-container d-lg-block d-none">
-            <div class="input-group">
-              <input type="text" class="form-control" id="searchAny" placeholder="Введите запрос">
-              <button class="btn" type="button">
-                <i class="bi bi-search"></i>
-              </button>
-            </div>
-          </div>
-          <a href="orders.html" class="leads d-none d-xl-flex">
-            <div class="lead-details">У вас <span class="count"> 21 </span> уведомление </div>
-            <span class="lead-icon"><i
-                class="bi bi-bell-fill animate__animated animate__swing animate__infinite infinite"></i><b
-                class="dot animate__animated animate__heartBeat animate__infinite"></b></span>
-          </a>
-          <ul class="header-actions">
-            <li class="dropdown">
-              <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
-                <span class="user-name d-none d-md-block">Иванова Анна</span>
-                <span class="avatar">
-                  <img src="assets/images/user.png" alt="Admin Templates">
-
-                </span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userSettings">
-                <div class="header-profile-actions">
-                  <a href="profile.html">Профиль</a>
-                  <a href="account-settings.html">Настройки</a>
-                  <a href="login.html">Выход</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
       <div class="content-wrapper-scroll">
         <div class="content-wrapper">
           <div class="card">

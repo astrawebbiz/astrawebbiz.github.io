@@ -1,10 +1,7 @@
 // Vertical Scroll
 $(function(){
 	$('#scrollVertical').DataTable({
-		"scrollY": "207px",
-		"scrollCollapse": true,
-		"paging": false,
-		"bInfo" : false,
+		"paging": true,
 		"language": {
         "sProcessing":    "Загрузка...",
         "sSearch":        "Поиск:",
@@ -13,7 +10,9 @@ $(function(){
             "sLast":    "Последняя",
             "sNext":    "Следующая",
             "sPrevious": "Предыдущая"
-        }
+        },
+        "lengthMenu":    "Показывать по _MENU_",
+        "info":          "Показаны с _START_ по _END_ из _TOTAL_",
     }
 	});
 });
